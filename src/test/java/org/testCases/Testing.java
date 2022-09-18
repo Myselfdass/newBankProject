@@ -52,7 +52,7 @@ public class Testing extends BaseClass{
 	@class
 	public void wait(){
 		
-		driver.getWindowHandle();
+		driver.getWindowHandle();grflhjhk
 	}
 	
 	
