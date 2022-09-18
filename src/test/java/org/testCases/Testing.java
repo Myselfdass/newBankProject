@@ -50,57 +50,7 @@ public class Testing extends BaseClass{
 	}
 	
 	
-	@DataProvider(name="dass")
-	public Object data() throws IOException {
+	
 		
-		FileInputStream input = new FileInputStream("C:\\Users\\91971\\eclipse-workspace\\BankProject\\src\\test\\resources\\Dada.xlsx");
-		Workbook work = new XSSFWorkbook(input);
-		Sheet sheet = work.getSheet("Sheet1");
-		for (int i = 0; i <sheet.getPhysicalNumberOfRows(); i++) {
-			Row row = sheet.getRow(i);
-			for (int j = 0; j <row.getPhysicalNumberOfCells(); j++) {
-				Cell cell = row.getCell(j);
-				String stringCellValue = cell.getStringCellValue();
-				String [][] str = new String[sheet.getPhysicalNumberOfRows()][row.getPhysicalNumberOfCells()];
-				str[0][0] = "arockia";
-				str[0][1] = "dass";
-				str[0][2] = "dass";
-				str[0][3] = "jesu Dasaa";
-				str[0][4] = "jdhgf@kgk";
-				str[0][5] = "hggf";
-				
-				str[1][0] = "shakir";
-				str[1][1] = "skay";
-				str[1][2] = "skay";
-				str[1][3] = "kdghj";
-				str[1][4] = "ghdhgfjl@";
-				str[1][5] = "gdksgj";
-				
-				
-				return str;
-			}
-			
-		}
-		
-		
-		
-		String [][] str = new String[sheet.getPhysicalNumberOfRows()][row];
-		str[0][0] = "arockia";
-		str[0][1] = "dass";
-		str[0][2] = "dass";
-		str[0][3] = "jesu Dasaa";
-		str[0][4] = "jdhgf@kgk";
-		str[0][5] = "hggf";
-		
-		str[1][0] = "shakir";
-		str[1][1] = "skay";
-		str[1][2] = "skay";
-		str[1][3] = "kdghj";
-		str[1][4] = "ghdhgfjl@";
-		str[1][5] = "gdksgj";
-		
-		
-		return str;
 	}
 	
-}
