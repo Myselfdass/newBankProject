@@ -16,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	public WebDriver driver;
-	public JavascriptExecutor script;
+	public JavascriptExecutor script = (Java);
 	
 	
 	public void browserLaunch(String browser) {
